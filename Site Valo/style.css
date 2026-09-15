@@ -1,0 +1,295 @@
+:root {
+    --main-color: #0E1721;
+    --black: #13131a;
+    --bg: #CD3338;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+    font-family: "Lora", serif;
+}
+
+body {
+    background: #0E1721;
+}
+
+section {
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    max-width: 1800px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-left: 6rem;
+}
+
+.navbar a:hover {
+    color: #CD3338;
+    border-bottom: #CD3338;
+    padding-bottom: 0.5rem;
+    font-size: 3rem;
+}
+
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+.home-container {
+    background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWoIOfXwSR70ZVHkPJvOTw5KZTqyefZo5Jf3YgpU_F5A6e3Lsw3bSuS4DXdC7YRBURNORCFHsSEgqtfh5MvrvgeBLUPXf35hqR4M-smlHRHtzmlqze0b5OuT1NJDzYTaIcQEXLCOWfToeZ3gF8cMuQ-yYxJZMCz_s-N7i2f-rRLK-CP7j2hdEGvXWGSWE/d/valorant-wallpaper-4k.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    max-width: 70rem;
+
+}
+
+.content h1 {
+    color: #CD3338;
+    font-size: 15rem;
+}
+
+.content p {
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 10;
+    line-height: 1.8;
+
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.imagem-content img {
+    background: url(https://www.pichauarena.com.br/wp-content/uploads/2024/05/EGS_VALORANT_RiotGames_S1_2560x1440-d9ca2c0fbaff9d80e8dedfbd726aa438.jpg.webp) no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+
+.sobre .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.sobre .row .sobre-content h2 {
+    color: #4CD7F6;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.sobre .row .sobre-content p {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.personagens h2 {
+    color: #CD3338;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+section {
+    position: relative;
+
+    & .list {
+        width: 70vw;
+        height: 100%;
+        margin: auto;
+        position: relative;
+
+        & .item {
+            position: absolute;
+            inset: 0;
+
+
+            & .img-personagem {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-2%);
+                width: 70%;
+
+                & img {
+                    width: 100%;
+                }
+
+            }
+
+            & .content-p {
+                position: absolute;
+                right: 100px;
+                width: 100%;
+                height: 850%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: end;
+                gap: 20px;
+
+                & .information {
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    color: #fff;
+                }
+
+                & h3 {
+                    font-size: 8em;
+                    line-height: 1em;
+                    color: #fff;
+                    font-family: "League Gothic", serif;
+                }
+
+                & .description {
+                    color: #fff;
+                    font-size: 15px;
+                    text-align: right;
+                    max-width: 400px;
+                    font-family: "League Gothic", serif;
+                }
+
+            }
+
+        }
+
+        .arrows {
+            width: 70vw;
+            position: absolute;
+            top: 400%;
+            left: 50%;
+            transform: translate(-50%, -25px);
+            display: flex;
+            justify-content: space-between;
+
+
+            & button:nth-child(2) {
+                & img {
+                    transform: scale(-1);
+                }
+            }
+
+            & button {
+                top: 60%;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: none;
+                cursor: pointer;
+
+
+                & img {
+                    width: 25px;
+                    margin-top: 4px;
+                    cursor: pointer;
+                }
+
+                &:hover {
+                    background: #CD3338;
+                }
+            }
+        }
+
+    }
+
+}
+
+section {
+
+    & .list {
+
+        & .item {
+            transform: translateX(100vw);
+            transition: 0.5s;
+            opacity: 0;
+
+
+
+            & .img-personagem {
+                & img {
+                    transition: 0.5s;
+                    transition-delay: 0.3s;
+
+                }
+            }
+
+            & .content-p .information .h3 .description {
+                transform: translateX(200px);
+                transition: 0.7s;
+                transition-delay: 0.3s;
+            }
+
+            & .information {
+                transition-delay: 0.5s;
+            }
+
+            & .h3 {
+                transition-delay: 0.7s;
+            }
+
+            & .description {
+                transition-delay: 0.9s;
+            }
+
+        }
+
+        & .active {
+            transform: translateX(0);
+            transition: 0.5s;
+            opacity: 1;
+
+            & .content-p .information .h3 .description {
+                transform: translateX(0);
+            }
+        }
+    }
+}
